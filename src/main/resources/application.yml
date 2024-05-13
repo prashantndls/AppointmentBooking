@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: AppointmentBooking
+  datasource:
+    url: jdbc:mysql://localhost:3306/appointment_db?createDatabaseIfNotExist=true
+    username: root
+    password: 123456
+  driverClassName: com.mysql.jdbc.Driver
+
+  flyway:
+    enabled: true
+    repair: true
+
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
